@@ -37,6 +37,19 @@ function encriptar() {
 
 }
 
+function desencriptar() {
+    let encriptado = document.getElementById('texto-encriptar').value;
+    console.log(encriptado);
+    let desencriptado = encriptado.replace(/ai/g, 'a');
+    desencriptado = desencriptado.replace(/enter/g, 'e');
+    desencriptado = desencriptado.replace(/imes/g, 'i');
+    desencriptado = desencriptado.replace(/ober/g, 'o');
+    desencriptado = desencriptado.replace(/ufat/g, 'u');
+    let resultado_desencriptado = document.querySelector('#texto-encriptado');
+    resultado_desencriptado.innerHTML = desencriptado;
+    condicionesResultado();
+}
+
 function validarTexto() {
     let texto_encriptar = document.getElementById('texto-encriptar').value;
     let caraterIngresado = texto_encriptar.charAt(texto_encriptar.length - 1);
