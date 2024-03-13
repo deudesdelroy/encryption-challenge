@@ -50,6 +50,13 @@ function desencriptar() {
     condicionesResultado();
 }
 
+function copiarTexto() {
+    let copiado = document.getElementById('texto-encriptado').value;
+    navigator.clipboard.writeText(copiado);
+    alert("¡Texto encriptado copiado!");
+    return;
+}
+
 function validarTexto() {
     let texto_encriptar = document.getElementById('texto-encriptar').value;
     let caraterIngresado = texto_encriptar.charAt(texto_encriptar.length - 1);

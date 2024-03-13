@@ -29,7 +29,7 @@
 
         <section class="derecha">
             <div>
-                <textarea name="texto-encriptado" class="resultado" id="texto-encriptado" cols="30" rows="10" hidden></textarea>
+                <textarea name="texto-encriptado" class="resultado" id="texto-encriptado" cols="30" rows="10" hidden readonly></textarea>
             </div>
             <div class="imagen-mensaje" id="imagen-mensaje">
                 <img src="images/Muñeco.png" alt="Personaje buscando texto">
@@ -37,7 +37,7 @@
                 <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
             </div>
             <div class="copiar">
-                <button class="boton-copiar" id="boton-copiar" hidden>Copiar</button>
+                <button class="boton-copiar" id="boton-copiar" onclick="copiarTexto();" hidden>Copiar</button>
             </div>
         </section>
 
