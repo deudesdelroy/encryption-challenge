@@ -16,12 +16,12 @@
     <main>
         <section class="izquierda">
             <div class="encriptar">
-                <textarea name="texto-encriptar" id="texto-encriptar" cols="10" rows="10" placeholder="Ingrese texto aquí"></textarea>
+                <textarea name="texto-encriptar" oninput="validarTexto();" id="texto-encriptar" cols="10" rows="10" placeholder="Ingrese texto aquí"></textarea>
                 
                 <p><img src="images/bi_exclamation-circle-fill.png" alt="Exclamación">Solo letras minúsculas y sin acentos</p>
                 
                 <div class="botones">
-                    <button class="boton-encriptar" onclick="">Encriptar</button>
+                    <button class="boton-encriptar" onclick="encriptar()">Encriptar</button>
                     <button class="boton-desencriptar">Desencriptar</button>
                 </div>
             </div>
@@ -29,15 +29,15 @@
 
         <section class="derecha">
             <div>
-                <textarea name="texto-encriptado" class="resultado" id="texto-encriptado" cols="30" rows="10"></textarea>
+                <textarea name="texto-encriptado" class="resultado" id="texto-encriptado" cols="30" rows="10" hidden></textarea>
             </div>
-            <div class="imagen-mensaje">
+            <div class="imagen-mensaje" id="imagen-mensaje">
                 <img src="images/Muñeco.png" alt="Personaje buscando texto">
                 <h2>Ningún mensaje fue <br> encontrado</h2>
                 <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
             </div>
             <div class="copiar">
-                <button class="boton-copiar">Copiar</button>
+                <button class="boton-copiar" id="boton-copiar" hidden>Copiar</button>
             </div>
         </section>
 
