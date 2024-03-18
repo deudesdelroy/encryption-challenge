@@ -4,7 +4,6 @@ body {
     font-style: normal;
 }
   
-
 header{
     background: #f3f5fc;
     padding: 12px;
@@ -22,7 +21,6 @@ main{
 
 .izquierda{
     padding: 3em;
-    /* width: 940px; */
     margin: 22px 121px;
 }
 
@@ -42,7 +40,6 @@ textarea:focus{
     font-size: 30px;
     font-family: "Roboto", sans-serif;
     color: #0A3871;
-    /* padding: 0 30% 0 0; */
 }
 
 .izquierda textarea::placeholder{
@@ -59,13 +56,9 @@ textarea:focus{
 
 .botones{
     display:block;
-    /* padding: auto; */
-    /* text-align: center; */
-    /* vertical-align: ; */
 }
 
 button{
-    /* font-family: Inter; */
     cursor: pointer;
     border: 1px solid #0A3871;
     border-radius: 15px;
@@ -82,7 +75,6 @@ button{
 
 .boton-desencriptar{
     width: 48%;
-    /* height: 67px; */
     color: #0A3871;
     background: #D8DFE8;
     margin-left: 3%;
@@ -107,7 +99,6 @@ button{
     color: #495057;
     border-radius: 15px;
     padding: 12px;
-    /* display: none; */
 }
 
 .imagen-mensaje{
@@ -126,17 +117,11 @@ button{
 
 .boton-copiar{
     width: 80%;
-    /* height: 67px; */
     color: #0A3871;
     background: #D8DFE8;
     vertical-align: bottom;
     margin-left: 3%;
-    /* display: none; */
-    /* position:static; */
 }
-
-
-
 
 footer{
     text-align: center;
