@@ -7,6 +7,7 @@ body {
 header{
     background: #f3f5fc;
     padding: 12px;
+    position: absolute;
 }
 
 main{
@@ -16,7 +17,7 @@ main{
     grid-template-areas:
     "izquierda derecha";
     grid-template-columns: 70% 30%;
-    grid-template-rows: 100%;
+    grid-template-rows: 95%;
 }
 
 .izquierda{
@@ -42,6 +43,10 @@ textarea:focus{
     color: #0A3871;
 }
 
+.izquierda p{
+    margin-bottom: 15px;
+}
+
 .izquierda textarea::placeholder{
     color: #0A3871;
     font-family: "Roboto", sans-serif;
@@ -56,12 +61,13 @@ textarea:focus{
 
 .botones{
     display:block;
+    height: 95%;
 }
 
 button{
     cursor: pointer;
     border: 1px solid #0A3871;
-    border-radius: 15px;
+    border-radius: 25px;
     height: 57px;
     font-size: 16px;
 }
@@ -85,14 +91,15 @@ button{
 .derecha{
     background: #FFFFFF;
     border-radius: 15px;
-    margin: 0 20px 20px 0 ;
+    margin: 20px 20px 20px 0 ;
     text-align: center;
     box-sizing: border-box;
+    box-shadow: 15px 10px 25px gray;
 }
 
 .derecha textarea{
     background: #ffffff;
-    width: 100%;
+    width: 93%;
     height: 350px;
     font-size: 25px;
     font-family: "Roboto", sans-serif;
@@ -129,4 +136,98 @@ footer{
     background: #343a40;
     margin: 0;
     padding: 5px;
+}
+
+@media screen and (max-width:480px) {
+    main{
+        width: 100%;
+       
+        grid-template-areas:
+        "izquierda"  
+        "derecha";
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+    }
+
+    .izquierda{
+        padding: 30px;
+        margin: 3px;
+    }
+
+    .izquierda textarea{
+        height: auto;
+    }
+    
+    .botones{
+        display:inline;
+    }
+
+    button{
+        height: 70px;
+        font-size: 20px;
+    }
+
+    .boton-encriptar{
+        width: 100%;
+    }
+
+    .boton-desencriptar{
+        margin-top: 15px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+
+
+
+    .derecha{
+        height: auto;
+        margin: 30px;
+        padding: 30px;
+        margin: 0 20px 0 20px ;
+        text-align: center;
+    }
+
+    .imagen-mensaje img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    main{
+        width: 100%;
+       
+        grid-template-areas:
+        "izquierda"  
+        "derecha";
+        grid-template-columns: 100%;
+        grid-template-rows: 75%;
+    }
+    .izquierda{
+        padding: 30px;
+        margin: 3px;
+        height: 40%;
+    }
+
+
+    .derecha{
+        margin: 0 20px 0 20px;
+    }
+
+
+
+    .texto-encriptado{
+        width: 95%;
+    }
+
+    .imagen-mensaje{
+        margin-top: 20%;
+    }
+    .imagen-mensaje img{
+        display: none;
+    }
+
+    .copiar{
+        display: none;
+    }
 }
